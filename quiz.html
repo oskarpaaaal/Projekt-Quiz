@@ -6,56 +6,100 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" type="text/css" href="style.css">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 
-    <title></title>
+    <title>Oskar's quiz</title>
+
+    <link href="style.css" rel="stylesheet">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous" rel="stylesheet">
+
+     
+
   </head>
   <body>
     <h1 class="container">Oskars Quiz!</h1>
 
     <form class="container" id="quiz" name="quiz">
 
-<p class="questions">Hur många ishallar hade Sverige i början på 2000-talet?</p>
 
-<input type="radio" id="" name="fråga1" value="">354<br>
-<input type="radio" id="" name="fråga1" value="">659<br>
-<input type="radio" id="" name="fråga1" value="">240<br>
+<p>Hur många ishallar hade Sverige i början på 2000-talet?</p>
 
-
-<br>
-<p class = "questions"></p>
-<input type="radio" id="" name="fråga3" value=""> <br>
-<input type="radio" id="" name="fråga3" value=""> <br>
-<input type="radio" id="" name="fråga3" value=""> <br>
-<br>
+<input type="radio" id="f1" name="fråga1" value="354">354 ishallar<br>
+<input type="radio" id="f1" name="fråga1" value="659">659 ishallar<br>
+<input type="radio" id="f1" name="fråga1" value="240">240 ishallar<br>
 
 
 <br>
-<p class="fråga2">Vilket år vann Sverige WM senast?</p>
-<input id="textbox" type="text" name="fråga2"><br>
+<p>Hur många WM-guld har Sverige vunnit</p>
+<input type="radio" id="f1" name="fråga2" value="11">11st<br>
+<input type="radio" id="f1" name="fråga2" value="19">19st<br>
+<input type="radio" id="f1" name="fråga2" value="26">26st<br>
+<br>
+
 
 <br>
-<p class="fråga2"></p>
-<input id="text">
+<p>Vilket år vann Sverige VM senast?</p>
+<input id="textbox" type="text" name="fråga3"><br>
+
+
 
 <br>
-<p class = "fråga3"></p>
-
-<input type="radio" id="" name="fråga3" value=""> <br>
-<input type="radio" id="" name="fråga3" value=""><br>
-<input type="radio" id="" name="fråga3" value=""><br>
+<p> Nämn den Svenske målvakten som spelar för NewYork Rangers och gör reklam för head and shoulders</p>
+<input id="textbox" type="text" name="fråga4"> 
 <br>
-<input id="button" type="button" value="Klar!" onclick="check();">
+
+
+
+<br>
+<p>Vilken förbundskapten tog Sverige till 2 guld i rad nyligen?</p>
+
+<input type="radio" id="f1" name="fråga5" value="Pär Mårts">Pär Mårts<br>
+<input type="radio" id="f1" name="fråga5" value="Peter Popovic">Peter Popovic<br>
+<input type="radio" id="f1" name="fråga5" value="Rikard Grönborg">Rikard Grönborg<br>
+<br>
+
+<br>
+<p>När vann Sverige sitt första VM guld</p>
+
+<input type="radio" id="f1" name="fråga5" value=""><br>
+<input type="radio" id="f1" name="fråga5" value=""><br>
+<input type="radio" id="f1" name="fråga5" value=""><br>
+
+
+<br>
+<p></p>
+
+<input type="radio" id="f1" name="fråga5" value=""><br>
+<input type="radio" id="f1" name="fråga5" value=""><br>
+<input type="radio" id="f1" name="fråga5" value=""><br>
+
+<br>
+<p></p>
+
+<input type="radio" id="f1" name="fråga5" value=""><br>
+<input type="radio" id="f1" name="fråga5" value=""><br>
+<input type="radio" id="f1" name="fråga5" value=""><br>
+<br>
+
+
+<input id="button" onclick="check()" type="submit" value="Klar!">
 
 
 </form>
 
+<div id="nar_klar">
+ <p id="message"></p>
+ <p id="antal_rätt"></p>
+</div>
+<br>
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script type="text/javascript" ></script>
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+<script src="skript.js"></script>
+
   </body>
 </html>
