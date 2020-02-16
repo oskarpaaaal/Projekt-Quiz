@@ -6,3 +6,11 @@
 .pstil{
 	font-weight: bold;
 }
+
+#quiz{
+	background: lightgrey;
+	padding: 10px 20px 10px 20px;
+	width: 600px;
+	border-radius: 20px;
+	float: center;
+}

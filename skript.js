@@ -49,16 +49,16 @@ function check(){
 
 	var range;
 
-		if (correct < 8) {
+		if (correct <= 6) {
 			range = 2;
 		}
 
-		if ( correct < 8 ) {
+		if ( correct > 6 && correct < 10 ) {
 			range = 1;
 		}
 
 
-		if (correct < 4) {
+		if (correct > 8) {
 			range = 0;
 		}
 		
@@ -67,7 +67,7 @@ function check(){
 	document.getElementById('nar_klar').style.visibility = "visible";
 
 	document.getElementById('antal_rätt').innerHTML = "Du fick " + correct + " rätt! ";
-	//document.getElementById('antal_rätt').innerHTML = messages[range];
+	document.getElementById('message').innerHTML = messages[range];
 	//console.log("Poäng: "+correct);
 	event.preventDefault();
 	}
